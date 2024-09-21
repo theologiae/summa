@@ -9,7 +9,7 @@
 >... a compendium of all of the main theological teachings of the Catholic Church, intended to be an instructional guide for theology students, including seminarians and the literate laity. Presenting the reasoning for almost all points of Christian theology in the West, topics of the Summa follow the following cycle: God; Creation, Man; Man's purpose; Christ; the Sacraments; and back to God.
 >-[Wikipedia](https://en.wikipedia.org/wiki/Summa_Theologica)
 
-A Markdown edition of the *Summa Theologica* or Summary of Theology by Saint Thomas Aquinas. For use in personal study and note-taking. Please read [St. Thomas's introduction](./dist/Prologue.md) for his take.
+A Markdown edition of the *Summa Theologica* or Summary of Theology by Saint Thomas Aquinas. For use in personal study and note-taking. Please read [St. Thomas's Prologue](./dist/Prologue.md) for his introduction.
 
 # Structure
 
@@ -62,7 +62,7 @@ In my studies, I need to quote or reference Aquina's thought.  My notes are larg
 # Acknowledgments
 In order of chronology:
 * 1920 - _The Summa Theologiæ of St. Thomas Aquinas_ Second and Revised Edition, literally translated by Fathers of the English Dominican Province  
-* 1947 - Benziger Bros. edition
+* 1947 - Benziger Bros. print edition
 * 1992 - Sandra K. Perry, Perrysburg, Ohio. (CCEL for hosting)
 * 2006 - David McClamrock's adjustments for the epub. (Gutenberg hosted)
 
