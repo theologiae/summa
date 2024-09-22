@@ -244,8 +244,8 @@ let fixLinks = (txt, toc) => {
 let adjustHeadings = (txt) => {
 
   for (let i = 1; i < 14; i++) {
-    txt = txt.replace(new RegExp(`\\*\\*\\*Objection ${i}\:\\*\\*\\* `, 'g'), `###### Objection ${i}\n`)
-    txt = txt.replace(new RegExp(`\\*\\*\\*Reply to Objection ${i}\:\\*\\*\\* `, 'g'), `###### Reply to Objection ${i}\n`)
+    txt = txt.replace(new RegExp(`\\*\\*\\*Objection ${i}\:\\*\\*\\* `, 'g'), `###### ${i > 1 ? 'Obj.' : 'Objection'} ${i}\n`)
+    txt = txt.replace(new RegExp(`\\*\\*\\*Reply to Objection ${i}\:\\*\\*\\* `, 'g'), `###### Reply Obj. ${i}\n`)
   }
 
   txt = txt.replace(/\*\*\*On the contrary,\*\*\* /g, '###### On the contrary,\n')
