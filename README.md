@@ -7,7 +7,7 @@ A Markdown edition of the *Summa Theologica* by Saint Thomas Aquinas. Intended f
 
 <br>
 
-#  Background
+# Background
 The Summa Theologica, or Summary of Theology, is a compendium of all of the main theological teachings of the Catholic Church, intended to be an instructional guide for theology students, including seminarians and the literate laity. It presents the reasoning for almost all points of Christian theology in the West. [cf.](https://en.wikipedia.org/wiki/Summa_Theologica) Please read [St. Thomas's Prologue](./dist/Prologue.md) for his introduction.
 
 <br>
@@ -63,13 +63,17 @@ I created this repository because I've needed to quote or reference Aquina's tho
 
 <br>
 
-# Warnings
-- This is conversion is unfinished; I will update it and correct as I read more.
-	- Expect some inconsistent formatting and missing links abound.
- 	- I don't how to read Latin and I am not an expert on the source text.
-- I've opted to reduce (what I felt was) unnecessary verbiage in the filenames, e.g. "OF", "THE".
-	- Otherwise, refrained from removing content in the files themselves. 
-- The text itself may be occasionally inaccurate, due to minor issues in the translated source material. As I read the summa, I will be cross-comparing the online version with David McClamrock's adjustments.
+# Warning
+- Status
+    - This is conversion is unfinished; As I read more, I will be updating it
+    - Expect some inconsistent formatting and missing links abound.
+- Design Choices
+    - I've opted to reduce (what I felt was) unnecessary verbiage in the filenames, e.g. "OF", "THE".
+        - Otherwise, refrained from removing content in the files themselves. 
+    - I've refrained from using the latin names, and focused on the english translation (I can't read Latin)
+        - In the future, a latin version of this text could be created alongside the english verison.
+- Minor issues in the translated source material.
+   - As I read the summa, I will be cross-comparing the online version with David McClamrock's adjustments.
 
 <br>
 
