@@ -81,26 +81,27 @@ let buildDir = (name, start, end, dirs=new Array(250)) => {
     index: 0,
     title: cleanTitle(name.replace("TREATISE ON", "").trim()).replace("Appendix", "Άppendix"),
   }
+  dir.root = dir;
   if (dir.parent) {
     dir.parent.children.push(dir);
     let space = "";
     dir.level = dir.parent.level + 1;
     dir.index = dir.parent.children.length;
+    dir.root = dir.parent.root;
     // dir.title = dir.index + " - " + dir.title;
   }
   if (dir.level >= 1) {
     let offset = "";
-    // if (dir.level < 2) {
+    if (dir.level < 2 && !dir.root.title.includes("Third Part")) {
       if (start+1 < 100) {
         offset = "0";
       }
       if (start+1 < 10) {
         offset = "00";
       }
-    // } 
-    // else if (start + 1 < 10) {
-    //   offset = "0";
-    // }
+    } else if (start + 1 < 10) {
+      offset = "0";
+    }
     dir.title = `${offset}${start+1}. ` + dir.title;
   }
   for (let i = start; i < end; i++) {

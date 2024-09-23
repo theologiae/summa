@@ -56,12 +56,12 @@ Question
 [Index](index.html)
 
 Question
-44. [The Procession of Creatures from God, and of the First Cause of All Things](./Summa%20Theologica/044.%20Creation/044.%20Production%20of%20Beings/44.%20Procession%20of%20Creatures%20From%20God,%20and%20of%20the%20First%20Cause%20of%20All%20Things.md)
-45. [The Mode of Emanation of Things from the First Principle](./Summa%20Theologica/044.%20Creation/044.%20Production%20of%20Beings/45.%20Mode%20of%20Emanation%20of%20Things%20From%20the%20First%20Principle.md)
-46. [Of the Beginning of the Duration of Creatures](./Summa%20Theologica/044.%20Creation/044.%20Production%20of%20Beings/46.%20Beginning%20of%20the%20Duration%20of%20Creatures.md)
-47. [Of the Distinction of Things in General](./Summa%20Theologica/044.%20Creation/044.%20Production%20of%20Beings/47.%20Treatise%20on%20the%20Distinction%20of%20Things%20in%20General;%20%20of%20the%20Distinction%20of%20Things%20in%20General.md)
-48. [The Distinction of Things in Particular](./Summa%20Theologica/044.%20Creation/048.%20Distinction%20of%20Good%20and%20Evil/48.%20Distinction%20of%20Things%20in%20Particular.md)
-49. [The Cause of Evil](./Summa%20Theologica/044.%20Creation/048.%20Distinction%20of%20Good%20and%20Evil/49.%20Cause%20of%20Evil.md)
+44. [The Procession of Creatures from God, and of the First Cause of All Things](./Summa%20Theologica/044.%20Creation/44.%20Production%20of%20Beings/44.%20Procession%20of%20Creatures%20From%20God,%20and%20of%20the%20First%20Cause%20of%20All%20Things.md)
+45. [The Mode of Emanation of Things from the First Principle](./Summa%20Theologica/044.%20Creation/44.%20Production%20of%20Beings/45.%20Mode%20of%20Emanation%20of%20Things%20From%20the%20First%20Principle.md)
+46. [Of the Beginning of the Duration of Creatures](./Summa%20Theologica/044.%20Creation/44.%20Production%20of%20Beings/46.%20Beginning%20of%20the%20Duration%20of%20Creatures.md)
+47. [Of the Distinction of Things in General](./Summa%20Theologica/044.%20Creation/44.%20Production%20of%20Beings/47.%20Treatise%20on%20the%20Distinction%20of%20Things%20in%20General;%20%20of%20the%20Distinction%20of%20Things%20in%20General.md)
+48. [The Distinction of Things in Particular](./Summa%20Theologica/044.%20Creation/48.%20Distinction%20of%20Good%20and%20Evil/48.%20Distinction%20of%20Things%20in%20Particular.md)
+49. [The Cause of Evil](./Summa%20Theologica/044.%20Creation/48.%20Distinction%20of%20Good%20and%20Evil/49.%20Cause%20of%20Evil.md)
 
 ### TREATISE ON THE ANGELS
 
