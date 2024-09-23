@@ -90,16 +90,17 @@ let buildDir = (name, start, end, dirs=new Array(250)) => {
   }
   if (dir.level >= 1) {
     let offset = "";
-    if (dir.level < 2) {
+    // if (dir.level < 2) {
       if (start+1 < 100) {
         offset = "0";
       }
       if (start+1 < 10) {
         offset = "00";
       }
-    } else if (start + 1 < 10) {
-      offset = "0";
-    }
+    // } 
+    // else if (start + 1 < 10) {
+    //   offset = "0";
+    // }
     dir.title = `${offset}${start+1}. ` + dir.title;
   }
   for (let i = start; i < end; i++) {
