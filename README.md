@@ -1,5 +1,5 @@
 
-<img src='https://i.imgur.com/eDlw4Lc.png?' />
+<img src='https://i.imgur.com/FLeeXXR.png?' />
 
 > As many miracles as articles —[Pope Leo XII](https://en.wikipedia.org/wiki/Summa_Theologica#Reception)
 
