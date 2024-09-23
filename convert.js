@@ -89,7 +89,18 @@ let buildDir = (name, start, end, dirs=new Array(250)) => {
     // dir.title = dir.index + " - " + dir.title;
   }
   if (dir.level >= 1) {
-    dir.title = `${start+1}. ` + dir.title;
+    let offset = "";
+    if (dir.level < 2) {
+      if (start+1 < 100) {
+        offset = "0";
+      }
+      if (start+1 < 10) {
+        offset = "00";
+      }
+    } else if (start + 1 < 10) {
+      offset = "0";
+    }
+    dir.title = `${offset}${start+1}. ` + dir.title;
   }
   for (let i = start; i < end; i++) {
     dirs[i] = dir;
@@ -147,7 +158,11 @@ let getQuestion = (part, questionIdx, txt) => {
     txt = txt.replace(/### /g, function() {
       return '# ' + ++i + ". "
     });
-    let name =  (questionIdx+1) + ". " + title + ".md";
+    let offset = "";
+    if (questionIdx+1 < 10) {
+      offset += "0";
+    }
+    let name =  offset + (questionIdx+1) + ". " + title + ".md";
     let filename = "./Summa Theologica/" + getQuestionFilename(part, name, questionIdx);
 
     return {
