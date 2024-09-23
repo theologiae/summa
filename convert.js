@@ -91,18 +91,22 @@ let buildDir = (name, start, end, dirs=new Array(250)) => {
     // dir.title = dir.index + " - " + dir.title;
   }
   if (dir.level >= 1) {
-    let offset = "";
-    if (dir.level < 2 && !dir.root.title.includes("Third Part")) {
-      if (start+1 < 100) {
+    let f = (start) => {
+      let offset = "";
+      if (dir.level < 2 && !dir.root.title.includes("Third Part")) {
+        if (start+1 < 100) {
+          offset = "0";
+        }
+        if (start+1 < 10) {
+          offset = "00";
+        }
+      } else if (start + 1 < 10) {
         offset = "0";
       }
-      if (start+1 < 10) {
-        offset = "00";
-      }
-    } else if (start + 1 < 10) {
-      offset = "0";
+      return offset;
     }
-    dir.title = `${offset}${start+1}. ` + dir.title;
+
+    dir.title = `${f(start)}${start+1}. ${dir.title} (${end-start})`;
   }
   for (let i = start; i < end; i++) {
     dirs[i] = dir;
