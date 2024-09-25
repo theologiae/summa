@@ -2,8 +2,17 @@ import { getAllFilesSync } from 'npm:get-all-files@5.0.0'
 import { titleCase } from "npm:title-case@4.3.2";
 import * as path from "jsr:@std/path";
 
+// tmd(data).books
+// for style of books.styles
+//    ...
+//    style.files
+//         
+//                    
+//
+
+
 /**
- * A hacky, unfinished script for converting https://www.ccel.org/a/aquinas/Summa Theologica/smt_html.zip into Markdown.
+ * A hacky, unfinished script for converting https://www.ccel.org/a/aquinas/books//smt_html.zip into Markdown.
  * Here's how to use this script:
  * 
  * Dependencies
@@ -16,7 +25,7 @@ import * as path from "jsr:@std/path";
  * 2. Run `find ./ -iname "*.html" -type f -exec sh -c 'pandoc "${0}" -t gfm-raw_html  --wrap=none -o "${0%.html}.md"' {} \;\n\n`
  *    Markdown files should now appear in `./src`
  * 3. Then, run `deno --allow-read --allow-write ./convert.js`
- *    It will overwrite ./Summa Theologica with a close proximate. 
+ *    It will overwrite ./books/Summa Theologica with a close proximate. 
  *    Not the same output though; I manually modified the source files between step 5 & 6 to pretty-ify the final result.
  *    
  * NOTE: This scripts needs to be rewritten to have a proper data model of Summa in JS (class Question, class Article, class Directory) 
@@ -131,7 +140,7 @@ let getQuestionFilename = (part, name, index) => {
       parent = parent.parent;
     }
   }
-  return tr + "/" + name;
+  return (tr + "/" + name).replaceAll(":", ";");
 }
 
 
@@ -180,7 +189,7 @@ let getQuestion = (part, questionIdx, txt) => {
       }
     }
     let name =  offset + (questionIdx+1) + ". " + title + ".md";
-    let filename = "./Summa Theologica/" + getQuestionFilename(part, name, questionIdx);
+    let filename = "./books/Summa Theologica/" + getQuestionFilename(part, name, questionIdx);
 
     return {
       name, 
@@ -312,7 +321,7 @@ let summa = {
 
 let init = () => {
   try {
-    Deno.removeSync("./Summa Theologica/", { recursive: true });
+    Deno.removeSync("./books/Summa Theologica/", { recursive: true });
   } catch(e) {
     console.log(e);
   }
@@ -366,9 +375,9 @@ let init = () => {
   }
 
   for (let { txt, part, base, basename, key} of postp) {
-    let newfilename = "./Summa Theologica/" + (part.root || "Άppendix") + "/";
+    let newfilename = "./books/Summa Theologica/" + (part.root || "Άppendix") + "/";
     if (basename === "FP-Prologue.md") {
-      newfilename = "./Summa Theologica/Prologue.md";
+      newfilename = "./books/Summa Theologica/Prologue.md";
     } else if (basename === "SS-PROLOGUE.md") {
       newfilename += "Prologue of the Second Part of the Second Part.md";
     } else if (basename === "XP-NOTE.MD") {
